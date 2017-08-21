@@ -23,8 +23,8 @@ header {
     border-bottom: 1px solid grey;
 }
 header img {
-    height: 7%;
-    padding: 0.75rem;
+    height: 4.5%;
+    padding: 0.45rem;
 }
 #title {
     display: block;
@@ -32,7 +32,7 @@ header img {
     width: 100%;
     text-align: center;
     font-family: 'Bubblegum Sans', cursive;
-    font-size: 5.2rem;
+    font-size: 4.3rem;
     margin: 0 auto;
     color: #3191dc;
 }
@@ -85,7 +85,7 @@ header img {
     margin-top: 1.25rem;
 }
 #label1 ,#label2 , #label3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'Fira Sans Condensed', sans-serif;
     margin-bottom: .65rem;
 }
@@ -95,7 +95,7 @@ header img {
     border-bottom: 1px solid grey;
     height: 2.3rem;
     width: 17rem;
-    font-size:1.45rem;
+    font-size:1.3rem;
     color: grey;
     margin-top: 0.4rem;
 }
