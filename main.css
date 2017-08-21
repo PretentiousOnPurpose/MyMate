@@ -4,7 +4,7 @@ section ,header  , html , body ,p , img ,input , label {
     box-sizing: border-box;
 }
 body {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-flow: column wrap;
