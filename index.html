@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed" rel="stylesheet">    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <header><img src="resized_logo3.png" alt="NISB_LOGO"></header>
+    <p id="title">My Mate ?</p>
+    <section id="input">
+        <div id = "in1">
+            <p id="label1">Income / Month: </p>
+            <p id="input1" contenteditable="true"></p>
+        </div>
+        <div id="in2">
+            <p id="label2">Gaming / Day (Hours): </p>
+            <p id="input2" contenteditable="true"></p>
+        </div>
+        <div id="in3">
+            <p id="label3">Ice Cream consumed / Day: </p>
+            <p id="input3" contenteditable="true"></p>
+        </div>
+    </section>
+    <button id="check" onclick="isMate()">Check</button>
+    <section id="result">
+        <img src="" alt="Emoji" id="emo">
+        <p id="resP">Hello</p>
+        <button id="reset" onclick="reset()">Reset</button>
+    </section>
+    <script src="index.js"></script>
+    <script src="kNN.js"></script>
+</body>
+</html>
