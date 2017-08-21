@@ -23,8 +23,8 @@ header {
     border-bottom: 1px solid grey;
 }
 header img {
-    height: 4.5%;
-    padding: 0.45rem;
+    height: 3%;
+    padding: 0.25rem;
 }
 #title {
     display: block;
@@ -32,7 +32,7 @@ header img {
     width: 100%;
     text-align: center;
     font-family: 'Bubblegum Sans', cursive;
-    font-size: 4.3rem;
+    font-size: 3.5rem;
     margin: 0 auto;
     color: #3191dc;
 }
@@ -69,12 +69,12 @@ header img {
     margin-bottom: 0.3rem;
 }
 #reset {
-    background-color: darkblue;
-    border-radius: 20%;
+    background-color: whitesmoke;
+    border-radius: 10%;
     height: 7%;
     width: 24%;
     font-size: 1.5rem;
-    color: white;
+    color: darkblue;
     margin: 0 auto;
     margin-top: 1.34rem;
 }
@@ -100,11 +100,11 @@ header img {
     margin-top: 0.4rem;
 }
 #check {
-    background-color: crimson;
-    border-radius: 20%;
-    height: 9%;
-    width: 27%;
-    font-size: 1.7rem;
-    color: white;
+    background-color: whitesmoke;
+    border-radius: 10%;
+    height: 8%;
+    width: 24%;
+    font-size: 1.55rem;
+    color: darkblue;
     margin-top: 1.5rem;
 }

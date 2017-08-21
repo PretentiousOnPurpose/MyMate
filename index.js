@@ -7,13 +7,17 @@ var ipSec = document.querySelector('#input');
 var result = document.querySelector('#result');
 var resP = document.querySelector('#resP');
 var img = document.querySelector('#emo');
+
+console.log(typeof(inc.value));
+
 function isNumeric(n) {
     return !isNaN(parseFloat(n)) && isFinite(n);
 }
 
 function isMate() {
-    if ((inc.innerHTML && game.innerHTML) && ice.innerHTML) {
-       if ((isNumeric(inc.innerHTML) && isNumeric(game.innerHTML)) && isNumeric(ice.innerHTML)) {
+    console.log(inc.value);
+    if ((inc.value && game.value) && ice.value) {
+       if ((isNumeric(inc.value) && isNumeric(game.value)) && isNumeric(ice.value)) {
            ipSec.style.display = "none";
            check.style.display = "none";
            result.style.display = "flex";
@@ -42,7 +46,7 @@ function reset() {
     check.style.display = "inline";
     result.style.display = "none";
     resP.innerHTML = "";
-    inc.innerHTML = "";
-    game.innerHTML = "";
-    ice.innerHTML = "";
+    inc.value = "";
+    game.value = "";
+    ice.value = "";
 }
