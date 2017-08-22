@@ -2010,7 +2010,7 @@ function classifyPoint(InX , dataSet , labels, k) {
         Distances.push(distanceCal(InX ,dataSet[X]));
     }
   Var te =Distances.slice(0).sort(function(a , b) {return a > b;})
-   for (X inte[1]) {
+   for (X in te) {
         sortedDist.push(Distances[Distances.indexOf(te[X])])
     }
     for (var i = 0; i < k; i++) {
