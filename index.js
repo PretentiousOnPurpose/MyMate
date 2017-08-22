@@ -15,19 +15,18 @@ function isNumeric(n) {
 }
 
 function isMate() {
-    console.log(inc.value);
     if ((inc.value && game.value) && ice.value) {
        if ((isNumeric(inc.value) && isNumeric(game.value)) && isNumeric(ice.value)) {
            ipSec.style.display = "none";
            check.style.display = "none";
            result.style.display = "flex";
-           if (isMyMate(inc , game ,ice) === "one") {
+           if (isMyMate(inc.value , game.value ,ice.value) === "one") {
                resP.innerHTML = "You Wont Like Him!";
                img.src = "one.png";
-           } else if (isMyMate(inc , game ,ice) === "two") {
+           } else if (isMyMate(inc.value , game.value ,ice.value) === "two") {
                resP.innerHTML = "He's Cute!";
                img.src = "two.png";
-           } else {
+           } else if (isMyMate(inc.value , game.value ,ice.value) === "thr"){
                resP.innerHTML = "You Will Love Him!";
                img.src = "thr.png";
            }

@@ -2006,13 +2006,14 @@ function classifyPoint(InX , dataSet , labels, k) {
     var one=0; var two=0; var thr=0;
     Distances = [];
     sortedDist = [];
-    for (var X = 0; X < dataSet.length; X++) {
-        Distances.push(distanceCal(InX ,dataSet[X]));
+    for (var X in dataSet) {
+        Distances.push(distanceCal(InX , dataSet[X]))
     }
-  var te =Distances.slice(0).sort(function(a , b) {return a > b;})
-   for (var Y = 0; Y < te.length; Y++) {
-        sortedDist.push(Distances[Distances.indexOf(te[Y])]);
+    var temp = Distances.slice().sort(function(a, b){return a-b});
+    for (var Y in temp) {
+        sortedDist.push(labels[Distances.indexOf(temp[Y])]);
     }
+    console.log(sortedDist);
     for (var i = 0; i < k; i++) {
         if (sortedDist[i] === "not_like_him") {
             one++;
@@ -2023,11 +2024,12 @@ function classifyPoint(InX , dataSet , labels, k) {
         }
     }
 
-    if(one > two && one > thr) {
+    if((one > two) && (one > thr)) {
         return "one";
-    } else if (two > one && two > thr) {
+    } else if ((two > one) && (two > thr)) {
         return "two";
     } else {
+        console.log(thr);
         return "thr";
     }
 }
