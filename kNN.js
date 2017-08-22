@@ -2006,11 +2006,11 @@ function classifyPoint(InX , dataSet , labels, k) {
     var one=0; var two=0; var thr=0;
     Distances = [];
     sortedDist = [];
-    for (X in dataSet) {
+    for (var X = 0; X < dataSet.length; X++ {
         Distances.push(distanceCal(InX ,dataSet[X]));
     }
     var te = Distances.slice(0).sort(function(a , b) {return a > b;})
-   for (X in te) {
+   for (var X = 0; X < te.length; X++) {
         sortedDist.push(Distances[Distances.indexOf(te[X])])
     }
     for (var i = 0; i < k; i++) {
