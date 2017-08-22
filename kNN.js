@@ -2006,12 +2006,12 @@ function classifyPoint(InX , dataSet , labels, k) {
     var one=0; var two=0; var thr=0;
     Distances = [];
     sortedDist = [];
-    for (var X = 0; X < dataSet.length; X++ {
+    for (var X = 0; X < dataSet.length; X++) {
         Distances.push(distanceCal(InX ,dataSet[X]));
     }
-    var te = Distances.slice(0).sort(function(a , b) {return a > b;})
-   for (var X = 0; X < te.length; X++) {
-        sortedDist.push(Distances[Distances.indexOf(te[X])])
+  var te =Distances.slice(0).sort(function(a , b) {return a > b;})
+   for (var Y = 0; Y < te.length; Y++) {
+        sortedDist.push(Distances[Distances.indexOf(te[Y])]);
     }
     for (var i = 0; i < k; i++) {
         if (sortedDist[i] === "not_like_him") {
@@ -2019,7 +2019,7 @@ function classifyPoint(InX , dataSet , labels, k) {
         } else if (sortedDist[i] === "be_OK_with_him") {
             two++;
         } else {
-            thr++
+            thr++;
         }
     }
 
@@ -2049,5 +2049,3 @@ function isMyMate(amt , game , ice) {
     var NMIP = normalizeInput([amt , game , ice]);
     return classifyPoint(NMIP , Data , label, 5);
 }
-
-[1]
